@@ -1,6 +1,7 @@
 <html>
   <title>Chat Title</title>
   <body>
+	  <button onclick="openChat()">Open Chat</button>
    <!-- <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
@@ -22,6 +23,9 @@
 <script type='text/javascript' src='https://individual307-dev-ed.develop.my.site.com/ESWCustomerService1765597573743/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 -->
 	  <script type='text/javascript'>
+		  function openChat(){
+			  embeddedservice_bootstrap.utilAPI.launchChat();
+		  }
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
